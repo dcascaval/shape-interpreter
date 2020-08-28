@@ -193,9 +193,22 @@ TopoDS_Shape MakeBottle(const Standard_Real myWidth, const Standard_Real myHeigh
   return aRes;
 }
 
+
+// What do we need for this? 
+// - A basic parser for a s-expression based shape DAG
+// - An interpreter that directly walks on that and uses OCC
+// - Some output JSON that describes what the output actually is
 int main()
 {
-  auto s = MakeBottle(10, 10, 0.5);
-  s.DumpJson(std::cout);
+  auto handle = MakeBottle(10, 10, 0.5);
+  handle.DumpJson(std::cout); 
+  std::cout << " " << std::endl;
+  auto t2 = TopoDS::Compound(handle);
+  t2.DumpJson(std::cout);
+  std::cout << " " << std::endl;
+
+  // Todo: use TopExp_Explorer (compound) 
+  // ShapeAnalysis_FreeBounds (compound) also does things?
+
   return 0;
 }

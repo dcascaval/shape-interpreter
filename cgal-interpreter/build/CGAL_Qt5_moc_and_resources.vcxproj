@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{668F5959-8D27-34F1-8704-E124F5D5B795}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>CGAL_Qt5_moc_and_resources</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CGAL_Qt5_moc_and_resources.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CGAL_Qt5_moc_and_resources</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CGAL_Qt5_moc_and_resources.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CGAL_Qt5_moc_and_resources</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CGAL_Qt5_moc_and_resources.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CGAL_Qt5_moc_and_resources</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CGAL_Qt5_moc_and_resources.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CGAL_Qt5_moc_and_resources</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_Debug;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CGAL_USE_BASIC_VIEWER;QT_NO_KEYWORDS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_LIB;QT_SVG_LIB;QT_XML_LIB;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CGAL_USE_BASIC_VIEWER;QT_NO_KEYWORDS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_OPENGL_LIB;QT_SVG_LIB;QT_XML_LIB;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_Debug;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_Debug;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target CGAL_Qt5_moc_and_resources</Message>
+      <Command>setlocal
+cd C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenInfo.cmake Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_Release;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CGAL_USE_BASIC_VIEWER;QT_NO_KEYWORDS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_XML_LIB;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CGAL_USE_BASIC_VIEWER;QT_NO_KEYWORDS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_XML_LIB;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_Release;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_Release;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target CGAL_Qt5_moc_and_resources</Message>
+      <Command>setlocal
+cd C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenInfo.cmake Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_MinSizeRel;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CGAL_USE_BASIC_VIEWER;QT_NO_KEYWORDS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_XML_LIB;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CGAL_USE_BASIC_VIEWER;QT_NO_KEYWORDS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_XML_LIB;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_MinSizeRel;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_MinSizeRel;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target CGAL_Qt5_moc_and_resources</Message>
+      <Command>setlocal
+cd C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenInfo.cmake MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_RelWithDebInfo;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CGAL_USE_BASIC_VIEWER;QT_NO_KEYWORDS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_XML_LIB;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;CGAL_USE_BASIC_VIEWER;QT_NO_KEYWORDS;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_OPENGL_LIB;QT_SVG_LIB;QT_XML_LIB;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_RelWithDebInfo;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\include_RelWithDebInfo;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build;C:\dev\CGAL-5.0.3\auxiliary\gmp\include;C:\dev\CGAL-5.0.3\include;C:\local\boost_1_71_0;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtGui;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtCore;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\.\mkspecs\win32-msvc;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtOpenGL;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtSvg;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\include\QtXml;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <Message>Automatic MOC for target CGAL_Qt5_moc_and_resources</Message>
+      <Command>setlocal
+cd C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_autogen C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/CMakeFiles/CGAL_Qt5_moc_and_resources_autogen.dir/AutogenInfo.cmake RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\resources\ImageInterface.ui">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ui_ImageInterface.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\uic.exe -o C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/ui_ImageInterface.h C:/dev/CGAL-5.0.3/include/CGAL/Qt/resources/ImageInterface.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/CGAL-5.0.3/include/CGAL/Qt/resources/ImageInterface.ui;C:\dev\CGAL-5.0.3\include\CGAL\Qt\resources\ImageInterface.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\ui_ImageInterface.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ui_ImageInterface.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\uic.exe -o C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/ui_ImageInterface.h C:/dev/CGAL-5.0.3/include/CGAL/Qt/resources/ImageInterface.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/CGAL-5.0.3/include/CGAL/Qt/resources/ImageInterface.ui;C:\dev\CGAL-5.0.3\include\CGAL\Qt\resources\ImageInterface.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\ui_ImageInterface.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ui_ImageInterface.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\uic.exe -o C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/ui_ImageInterface.h C:/dev/CGAL-5.0.3/include/CGAL/Qt/resources/ImageInterface.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/CGAL-5.0.3/include/CGAL/Qt/resources/ImageInterface.ui;C:\dev\CGAL-5.0.3\include\CGAL\Qt\resources\ImageInterface.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\ui_ImageInterface.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ui_ImageInterface.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\uic.exe -o C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/ui_ImageInterface.h C:/dev/CGAL-5.0.3/include/CGAL/Qt/resources/ImageInterface.ui
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/CGAL-5.0.3/include/CGAL/Qt/resources/ImageInterface.ui;C:\dev\CGAL-5.0.3\include\CGAL\Qt\resources\ImageInterface.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\ui_ImageInterface.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\CGAL-5.0.3\demo\resources\CGAL.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_CGAL.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name CGAL --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_CGAL.cpp C:/dev/CGAL-5.0.3/demo/resources/CGAL.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/CGAL-5.0.3/demo/resources/CGAL.qrc;C:\dev\CGAL-5.0.3\demo\resources\about_CGAL.html;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo_ipe_2013.png;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo_ipe_2013.png;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo.xpm;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\resources\CGAL.qrc.depends;C:\dev\CGAL-5.0.3\demo\resources\CGAL.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_CGAL.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_CGAL.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name CGAL --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_CGAL.cpp C:/dev/CGAL-5.0.3/demo/resources/CGAL.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/CGAL-5.0.3/demo/resources/CGAL.qrc;C:\dev\CGAL-5.0.3\demo\resources\about_CGAL.html;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo_ipe_2013.png;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo_ipe_2013.png;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo.xpm;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\resources\CGAL.qrc.depends;C:\dev\CGAL-5.0.3\demo\resources\CGAL.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_CGAL.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_CGAL.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name CGAL --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_CGAL.cpp C:/dev/CGAL-5.0.3/demo/resources/CGAL.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/CGAL-5.0.3/demo/resources/CGAL.qrc;C:\dev\CGAL-5.0.3\demo\resources\about_CGAL.html;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo_ipe_2013.png;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo_ipe_2013.png;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo.xpm;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\resources\CGAL.qrc.depends;C:\dev\CGAL-5.0.3\demo\resources\CGAL.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_CGAL.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_CGAL.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name CGAL --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_CGAL.cpp C:/dev/CGAL-5.0.3/demo/resources/CGAL.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/CGAL-5.0.3/demo/resources/CGAL.qrc;C:\dev\CGAL-5.0.3\demo\resources\about_CGAL.html;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo_ipe_2013.png;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo_ipe_2013.png;C:\dev\CGAL-5.0.3\demo\resources\cgal_logo.xpm;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\resources\CGAL.qrc.depends;C:\dev\CGAL-5.0.3\demo\resources\CGAL.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_CGAL.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\CGAL-5.0.3\demo\icons\Input.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_Input.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name Input --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_Input.cpp C:/dev/CGAL-5.0.3/demo/icons/Input.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/CGAL-5.0.3/demo/icons/Input.qrc;C:\dev\CGAL-5.0.3\demo\icons\inputPoint.png;C:\dev\CGAL-5.0.3\demo\icons\fit-page-32.png;C:\dev\CGAL-5.0.3\demo\icons\inputPolyline.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\Input.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\Input.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Input.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_Input.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name Input --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_Input.cpp C:/dev/CGAL-5.0.3/demo/icons/Input.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/CGAL-5.0.3/demo/icons/Input.qrc;C:\dev\CGAL-5.0.3\demo\icons\inputPoint.png;C:\dev\CGAL-5.0.3\demo\icons\fit-page-32.png;C:\dev\CGAL-5.0.3\demo\icons\inputPolyline.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\Input.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\Input.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Input.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_Input.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name Input --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_Input.cpp C:/dev/CGAL-5.0.3/demo/icons/Input.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/CGAL-5.0.3/demo/icons/Input.qrc;C:\dev\CGAL-5.0.3\demo\icons\inputPoint.png;C:\dev\CGAL-5.0.3\demo\icons\fit-page-32.png;C:\dev\CGAL-5.0.3\demo\icons\inputPolyline.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\Input.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\Input.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Input.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_Input.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name Input --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_Input.cpp C:/dev/CGAL-5.0.3/demo/icons/Input.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/CGAL-5.0.3/demo/icons/Input.qrc;C:\dev\CGAL-5.0.3\demo\icons\inputPoint.png;C:\dev\CGAL-5.0.3\demo\icons\fit-page-32.png;C:\dev\CGAL-5.0.3\demo\icons\inputPolyline.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\Input.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\Input.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Input.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\CGAL-5.0.3\demo\icons\File.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_File.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name File --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_File.cpp C:/dev/CGAL-5.0.3/demo/icons/File.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/CGAL-5.0.3/demo/icons/File.qrc;C:\dev\CGAL-5.0.3\demo\icons\fileNew.png;C:\dev\CGAL-5.0.3\demo\icons\fileOpen.png;C:\dev\CGAL-5.0.3\demo\icons\fileSave.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\File.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\File.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_File.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_File.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name File --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_File.cpp C:/dev/CGAL-5.0.3/demo/icons/File.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/CGAL-5.0.3/demo/icons/File.qrc;C:\dev\CGAL-5.0.3\demo\icons\fileNew.png;C:\dev\CGAL-5.0.3\demo\icons\fileOpen.png;C:\dev\CGAL-5.0.3\demo\icons\fileSave.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\File.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\File.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_File.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_File.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name File --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_File.cpp C:/dev/CGAL-5.0.3/demo/icons/File.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/CGAL-5.0.3/demo/icons/File.qrc;C:\dev\CGAL-5.0.3\demo\icons\fileNew.png;C:\dev\CGAL-5.0.3\demo\icons\fileOpen.png;C:\dev\CGAL-5.0.3\demo\icons\fileSave.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\File.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\File.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_File.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_File.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name File --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_File.cpp C:/dev/CGAL-5.0.3/demo/icons/File.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/CGAL-5.0.3/demo/icons/File.qrc;C:\dev\CGAL-5.0.3\demo\icons\fileNew.png;C:\dev\CGAL-5.0.3\demo\icons\fileOpen.png;C:\dev\CGAL-5.0.3\demo\icons\fileSave.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\File.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\File.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_File.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating qrc_Triangulation_2.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name Triangulation_2 --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_Triangulation_2.cpp C:/dev/CGAL-5.0.3/demo/icons/Triangulation_2.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/CGAL-5.0.3/demo/icons/Triangulation_2.qrc;C:\dev\CGAL-5.0.3\demo\icons\Delaunay_triangulation_2.png;C:\dev\CGAL-5.0.3\demo\icons\Voronoi_diagram_2.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Triangulation_2.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating qrc_Triangulation_2.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name Triangulation_2 --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_Triangulation_2.cpp C:/dev/CGAL-5.0.3/demo/icons/Triangulation_2.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/CGAL-5.0.3/demo/icons/Triangulation_2.qrc;C:\dev\CGAL-5.0.3\demo\icons\Delaunay_triangulation_2.png;C:\dev\CGAL-5.0.3\demo\icons\Voronoi_diagram_2.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Triangulation_2.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating qrc_Triangulation_2.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name Triangulation_2 --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_Triangulation_2.cpp C:/dev/CGAL-5.0.3/demo/icons/Triangulation_2.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/CGAL-5.0.3/demo/icons/Triangulation_2.qrc;C:\dev\CGAL-5.0.3\demo\icons\Delaunay_triangulation_2.png;C:\dev\CGAL-5.0.3\demo\icons\Voronoi_diagram_2.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Triangulation_2.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating qrc_Triangulation_2.cpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\bin\rcc.exe --name Triangulation_2 --output C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/qrc_Triangulation_2.cpp C:/dev/CGAL-5.0.3/demo/icons/Triangulation_2.qrc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/CGAL-5.0.3/demo/icons/Triangulation_2.qrc;C:\dev\CGAL-5.0.3\demo\icons\Delaunay_triangulation_2.png;C:\dev\CGAL-5.0.3\demo\icons\Voronoi_diagram_2.png;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\__\__\__\__\__\__\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc.depends;C:\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Triangulation_2.cpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Dan/Desktop/Repos/occ/cgal-interpreter -BC:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build --check-stamp-file C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindBoost.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeCXXCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\dev\CGAL-5.0.3\CGALConfig.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Common.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_CreateSingleSourceCGALProgram.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_GeneratorSpecificSettings.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Macros.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Qt5_moc_and_resource_files.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SCM.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupBoost.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupCGALDependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupCGAL_Qt5Dependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupGMP.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupVLD.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_TweakFindBoost.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_VersionUtils.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_add_test.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_enable_end_of_configuration_hook.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_parse_version_h.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_setup_target_dependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_target_use_TBB.cmake;C:\dev\CGAL-5.0.3\cmake\modules\FindGMP.cmake;C:\dev\CGAL-5.0.3\cmake\modules\FindMPFR.cmake;C:\dev\CGAL-5.0.3\demo\icons\File.qrc;C:\dev\CGAL-5.0.3\demo\icons\Input.qrc;C:\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc;C:\dev\CGAL-5.0.3\demo\resources\CGAL.qrc;C:\dev\CGAL-5.0.3\lib\cmake\CGAL\CGALConfig.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Dan/Desktop/Repos/occ/cgal-interpreter -BC:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build --check-stamp-file C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindBoost.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeCXXCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\dev\CGAL-5.0.3\CGALConfig.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Common.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_CreateSingleSourceCGALProgram.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_GeneratorSpecificSettings.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Macros.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Qt5_moc_and_resource_files.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SCM.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupBoost.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupCGALDependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupCGAL_Qt5Dependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupGMP.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupVLD.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_TweakFindBoost.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_VersionUtils.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_add_test.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_enable_end_of_configuration_hook.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_parse_version_h.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_setup_target_dependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_target_use_TBB.cmake;C:\dev\CGAL-5.0.3\cmake\modules\FindGMP.cmake;C:\dev\CGAL-5.0.3\cmake\modules\FindMPFR.cmake;C:\dev\CGAL-5.0.3\demo\icons\File.qrc;C:\dev\CGAL-5.0.3\demo\icons\Input.qrc;C:\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc;C:\dev\CGAL-5.0.3\demo\resources\CGAL.qrc;C:\dev\CGAL-5.0.3\lib\cmake\CGAL\CGALConfig.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Dan/Desktop/Repos/occ/cgal-interpreter -BC:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build --check-stamp-file C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindBoost.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeCXXCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\dev\CGAL-5.0.3\CGALConfig.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Common.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_CreateSingleSourceCGALProgram.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_GeneratorSpecificSettings.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Macros.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Qt5_moc_and_resource_files.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SCM.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupBoost.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupCGALDependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupCGAL_Qt5Dependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupGMP.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupVLD.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_TweakFindBoost.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_VersionUtils.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_add_test.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_enable_end_of_configuration_hook.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_parse_version_h.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_setup_target_dependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_target_use_TBB.cmake;C:\dev\CGAL-5.0.3\cmake\modules\FindGMP.cmake;C:\dev\CGAL-5.0.3\cmake\modules\FindMPFR.cmake;C:\dev\CGAL-5.0.3\demo\icons\File.qrc;C:\dev\CGAL-5.0.3\demo\icons\Input.qrc;C:\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc;C:\dev\CGAL-5.0.3\demo\resources\CGAL.qrc;C:\dev\CGAL-5.0.3\lib\cmake\CGAL\CGALConfig.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -SC:/Users/Dan/Desktop/Repos/occ/cgal-interpreter -BC:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build --check-stamp-file C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Dan/Desktop/Repos/occ/cgal-interpreter/CMakeLists.txt;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCXXInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeLanguageInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeParseArguments.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindBoost.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\FindPackageMessage.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows-MSVC.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.13\Modules\Platform\WindowsPaths.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5Config.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5OpenGL\Qt5OpenGLConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5SvgConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgIconPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Svg\Qt5Svg_QSvgPlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfig.cmake;C:\Qt\Qt5.12.9\5.12.9\msvc2017_64\lib\cmake\Qt5Xml\Qt5XmlConfigVersion.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeCCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeCXXCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeRCCompiler.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\3.13.3\CMakeSystem.cmake;C:\dev\CGAL-5.0.3\CGALConfig.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Common.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_CreateSingleSourceCGALProgram.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_GeneratorSpecificSettings.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Macros.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_Qt5_moc_and_resource_files.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SCM.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupBoost.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupCGALDependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupCGAL_Qt5Dependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupGMP.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_SetupVLD.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_TweakFindBoost.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_VersionUtils.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_add_test.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_enable_end_of_configuration_hook.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_parse_version_h.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_setup_target_dependencies.cmake;C:\dev\CGAL-5.0.3\cmake\modules\CGAL_target_use_TBB.cmake;C:\dev\CGAL-5.0.3\cmake\modules\FindGMP.cmake;C:\dev\CGAL-5.0.3\cmake\modules\FindMPFR.cmake;C:\dev\CGAL-5.0.3\demo\icons\File.qrc;C:\dev\CGAL-5.0.3\demo\icons\Input.qrc;C:\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc;C:\dev\CGAL-5.0.3\demo\resources\CGAL.qrc;C:\dev\CGAL-5.0.3\lib\cmake\CGAL\CGALConfig.cmake;C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\GraphicsViewNavigation.h" />
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\DemosMainWindow.h" />
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\GraphicsItem.h" />
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\GraphicsViewInput.h" />
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\camera.h" />
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\frame.h" />
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\keyFrameInterpolator.h" />
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\manipulatedCameraFrame.h" />
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\manipulatedFrame.h" />
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\qglviewer.h" />
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\image_interface.h" />
+    <ClInclude Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\ui_ImageInterface.h" />
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_CGAL.cpp" />
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Input.cpp" />
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_File.cpp" />
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Triangulation_2.cpp" />
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\mocs_compilation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\ZERO_CHECK.vcxproj">
+      <Project>{1CC079EE-66F6-3441-8F39-152F816200DE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_CGAL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_File.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\qrc_Triangulation_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\CGAL_Qt5_moc_and_resources_autogen\mocs_compilation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\GraphicsViewNavigation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\DemosMainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\GraphicsItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\GraphicsViewInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\frame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\keyFrameInterpolator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\manipulatedCameraFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\manipulatedFrame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\qglviewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\image_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\build\ui_ImageInterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\CGAL-5.0.3\include\CGAL\Qt\resources\ImageInterface.ui" />
+    <CustomBuild Include="C:\dev\CGAL-5.0.3\demo\resources\CGAL.qrc" />
+    <CustomBuild Include="C:\dev\CGAL-5.0.3\demo\icons\Input.qrc" />
+    <CustomBuild Include="C:\dev\CGAL-5.0.3\demo\icons\File.qrc" />
+    <CustomBuild Include="C:\dev\CGAL-5.0.3\demo\icons\Triangulation_2.qrc" />
+    <CustomBuild Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{192145E4-4875-3724-9D3B-EFEC39042B71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EBBC6E7D-59E4-3434-960E-99BEE85C4B17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

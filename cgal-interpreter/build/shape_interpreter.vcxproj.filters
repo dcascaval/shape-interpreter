@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\shape_interpreter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EBBC6E7D-59E4-3434-960E-99BEE85C4B17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

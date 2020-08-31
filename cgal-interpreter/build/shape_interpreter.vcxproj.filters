@@ -4,6 +4,9 @@
     <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\shape_interpreter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\CMakeLists.txt" />

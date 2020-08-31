@@ -10,13 +10,15 @@
 #include <CGAL/Triangulation_vertex.h>
 #include <CGAL/Triangulation_vertex_base_with_info_2.h>
 #include <CGAL/Triangulation_face_base_with_info_2.h>
-
+#include <CGAL/draw_triangulation_2.h>
 
 #include <string>
 #include <fstream>
 #include <iostream>
 #include <filesystem>
 #include <unordered_map>
+
+#include "./parser.cpp"
 
 typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
 
@@ -25,9 +27,8 @@ typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
 
 typedef CGAL::Projection_traits_xy_3<K>  Gt;
 typedef CGAL::Triangulation_vertex_base_with_info_2<std::string, Gt> vb;
-typedef CGAL::Triangulation_face_base_with_info_2<std::string, K> fb; 
+typedef CGAL::Triangulation_face_base_with_info_2<std::string, K> fb;
 typedef CGAL::Triangulation_data_structure_2<vb, fb> tds;
-typedef CGAL::Projection_traits_xy_3<K>  Gt;
 typedef CGAL::Delaunay_triangulation_2<Gt,tds> Delaunay;
 
 typedef CGAL::Point_3<K> Point;
@@ -48,7 +49,7 @@ int main() {
   std::cout << fs::current_path() << std::endl;
 
   Delaunay dt(begin, end);
-  
+
   std::unordered_map<Point, int> point_map;
   int i = 0;
   for (Vertex_handle v : dt.finite_vertex_handles()) {
@@ -57,7 +58,7 @@ int main() {
     point_map[p] = i; i++;
   }
 
-  i = 0; 
+  i = 0;
   std::unordered_map<std::string, int> face_map;
   for (Face_handle f : dt.finite_face_handles()) {
     auto t = dt.triangle(f);
@@ -65,7 +66,7 @@ int main() {
     auto i1 = point_map[t.vertex(0)];
     auto i2 = point_map[t.vertex(1)];
     auto i3 = point_map[t.vertex(2)];
-  
+
     std::cout << i << ": " << i1 << " " << i2 << " " << i3 << std::endl;
     face_map[f->info()] = i; i++;
   }
@@ -78,7 +79,14 @@ int main() {
     auto ei = point_map[line.end()];
     std::cout << fi << ": [" << si  << "-" << ei << "]" << std::endl;
   }
-   
+  std::cout << std::endl;
+
+  CGAL::draw(dt);
+
+
+  Parser p;
+  // p.tokenize()
+  // p.parse(); 
 
   std::cout << std::endl;
   return EXIT_SUCCESS;

@@ -330,6 +330,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\parser.cpp" />
     <ClCompile Include="C:\Users\Dan\Desktop\Repos\occ\cgal-interpreter\shape_interpreter.cpp" />
   </ItemGroup>
   <ItemGroup>

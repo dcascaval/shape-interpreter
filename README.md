@@ -1,10 +1,20 @@
 A shape language.
 
+## Some design goals:
+- Usable as an IR between geometric implementations.
+- Easy to prove properties or extract constraints & equivalences.
+- Easy to automatically manipulate and transform.
+- Reasonably matches the structure of real CAD? (2D sketches -> extrusions?)
+
+## Questions:
+- Symbolic "constraint" operations? (see #constraints below) Should these be the basis instead?
+- How many constructors for the same object? e.g. can make an Arc by Start/End/Radius/Direction or by Center/Radius/θ1/θ2. Is it better to:
+  - Include both of these to increase the space of easily-findable parametrizations?
+  - Only have one canonical form of each constructor to decrease load on any synthesis we do?
+
 # Base
 
 Basic operations include:
-
-
    - `Vec2 / Vec3`                 (Points)
    - `Line / Circle / Polyline`    (2D)
    - `Extrude`                     (Projections)
@@ -17,12 +27,14 @@ This is basically Caddy + References. For example:
    ```ml
    let base = 0;
    let far = 5;
+   (* construct rectangle *)
    let p1 = vec2 base base;
    let p2 = vec2 far base;
    let p3 = vec2 far far;
    let p4 = vec2 base far;
    let pl = list p1 p2 p3 p4;
    let ex = extrude pl (vec3 0 0 far);
+   (* transform and modify 3d meshes *)
    let e2 = translate ex (vec3 far far 0);
    let mid = / (+ far base) 2.0;
    let e3 = scale (vec3 mid mid mid) (1.5) (translate ex (vec3 mid mid 0));
@@ -67,6 +79,7 @@ This is basically Caddy + References. For example:
    let l = line A B; (* capital == symbolic variables *)
    constrain line (proportional (vec3 0 0 1) ex 0.5);
    ```
+   This line isn't fully constrained, but we can pick reasonable values for it. Further constraints can fully-define it.
 
    The grammar of this might be as follows:
 
@@ -83,7 +96,7 @@ This is basically Caddy + References. For example:
 
    `Tabulate` (both lists and sets)
 
-   Example (from above):
+   Example (rewritten from above):
    ```ml
    let midpts = tabulate 0 2 2 (i =>
     let ei = pick edges i;

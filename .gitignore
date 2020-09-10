@@ -3,6 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+cgal-interpreter/build/CGAL_Qt5_moc_and_resources_autogen/
+
 # User-specific files
 *.rsuser
 *.suo

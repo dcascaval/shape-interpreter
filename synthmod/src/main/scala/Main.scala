@@ -285,7 +285,7 @@ object Variations {
   import PrettyPrinters._
   import VariationUtils._
 
-  def vary(ctx: Map[String, Parameter], handles: List[(String, Double)], ast: AST): Seq[AST] = {
+  def vary(ctx: Map[String, Parameter], handles: List[(String, Double)], ast: AST): IndexedSeq[AST] = {
     val t             = 0.5 // Tolerance to vary up/down by
     val variedHandles = handles.map { case (s, d) => Array((s, Literal(d + t)), (s, Literal(d)), (s, Literal(d - t))) }
     var choices       = new ChooseSeq(2, handles.size)
@@ -298,19 +298,27 @@ object Variations {
       result = concreteAST :: result
       choices.increment()
     }
-    result
+    result.toVector
   }
 }
 
-object Main extends App {
-  import PrettyPrinters._
+import processing.core._
+import PApplet._
 
-  val cross      = Examples.crossExample
-  val (ast, ctx) = Unifier.unify(cross)
-  ctx.meld()
-  println(ctx.known_variables)
+object Main extends PApplet {
+  def main(args: Array[String]): Unit = {
+    import PrettyPrinters._
 
-  val inverse = ctx.inverted
-  val handles = ctx.handles(inverse)
-  println(Variations.vary(inverse, handles, ast).map(_.print).mkString("\n\n"))
+    val cross      = Examples.crossExample
+    val (ast, ctx) = Unifier.unify(cross)
+    ctx.meld()
+    println(ctx.known_variables)
+
+    val inverse = ctx.inverted
+    val handles = ctx.handles(inverse)
+    val asts    = Variations.vary(inverse, handles, ast)
+
+    DisplayData.setASTs(asts)
+    PApplet.main("Display")
+  }
 }

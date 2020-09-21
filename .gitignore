@@ -365,3 +365,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+synthmod/.bloop
+synthmod/.metals
+synthmod/project/*
+synthmod/target
+synthmod/.vscode
+!synthmod/project/build.properties

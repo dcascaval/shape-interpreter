@@ -23,6 +23,11 @@ import MathUtils._
 //    its constants into parameters and small expressions.
 //  - Then, try adjusting these found-parameters and see where model goes.
 //
+// Conversely, parameter splitting
+//  - After parameters have been merged, we keep track of all of the vertices that move when
+//    we adjust one. Sometimes we can instead split the parameter into two that reflect different
+//    use sites and see if this gets us a better knob for control.
+//
 // "Pattern finding"
 // - Similar to parameter merging... attempt to recast some elements
 //   as transforms of other elements.
@@ -70,7 +75,6 @@ object Examples {
 }
 
 class Context(var known_variables: Map[Parameter, String]) {
-
   def add(value: Double): Parameter = {
     known_variables.get(Literal(value)) match {
       case None => {
@@ -135,6 +139,10 @@ class Context(var known_variables: Map[Parameter, String]) {
 
   def inverted: Map[String, Parameter] = {
     for ((k, v) <- known_variables) yield (v, k)
+  }
+
+  def handles(map: Map[String,Parameter]): List[(String,Double)] = {
+    map.filter { case (_,Literal(d)) => true case _ => false } .toList.map { case (k,Literal(d)) => (k,d) }
   }
 }
 
@@ -221,17 +229,141 @@ object Transformer {
   def transform(ast: AST, query: Query): AST = ???
 }
 
-object Main extends App {
-  val cross      = Examples.crossExample
-  val (ast, ctx) = Unifier.unify(cross)
-  ctx.meld()
-  println(ctx.inverted)
-}
+object Interpreter {
 
-class Parser {
-  def parse(input: String): AST = {
-    ???
+  def evaluate_parameter(ctx: Map[String,Parameter], p : Parameter) : Double = {
+    p match {
+      case Literal(v) => v
+      case Operation(op, args @ _ *) => {
+        val as = args.map(p => evaluate_parameter(ctx,p))
+        (op, as) match {
+          case (Neg,Seq(a)) => -a
+          case (Add,Seq(a,b)) => a+b
+          case (Sub,Seq(a,b)) => a-b
+          case (Mul,Seq(a,b)) => a*b
+        }
+      }
+      case Reference(variable) => {
+        ctx.get(variable) match {
+          case Some(p) => evaluate_parameter(ctx,p)
+        }
+      }
+    }
+  }
+
+  implicit class pointEvaluator(point: Pt) {
+    def evaluate(ctx: Map[String,Parameter]) : Pt = {
+     val x = evaluate_parameter(ctx,point.x)
+        val y = evaluate_parameter(ctx,point.y)
+        Pt(Literal(x),Literal(y))
+    }
+  }
+
+  def evaluate(ctx: Map[String,Parameter], ast: AST) : AST = {
+    ast match {
+      case p : Pt => p.evaluate(ctx)
+      case Line(a,b) => {
+        val s = a.evaluate(ctx)
+        val e = b.evaluate(ctx)
+        Line(s,e)
+      }
+      case Union(components) => {
+        Union(components.map(c => evaluate(ctx,c)))
+      }
+      case _ => ???
+    }
   }
 }
 
-object REPL {}
+object Variations {
+  import PrettyPrinters._
+
+  class ChooseSeq(bound: Int, arity: Int) {
+    var values : Array[Int] = (0 until arity).toArray
+
+    def hasNext: Boolean = {
+      values.exists(i => i != bound)
+    }
+
+    def apply(i : Int) = values(i)
+
+    def increment() : Unit = {
+      def inc(n : Int): Unit = {
+        if (values(n) != bound) {
+          values(n) += 1
+        } else if (n > 0) {
+          values(n) = 0
+          inc(n-1)
+        }
+      }
+      inc(arity-1)
+    }
+  }
+
+  def choose[T](list : List[Array[T]], choices: ChooseSeq): List[T] = {
+    list.zipWithIndex.map{ case (a,i) => a(choices(i)) }
+  }
+
+  implicit class WithValues(ctx: Map[String,Parameter]) {
+    def withValues(params: List[(String,Parameter)]): Map[String,Parameter] = {
+      var current = ctx
+      for (p <- params) {
+        current += (p)
+      }
+      current
+    }
+  }
+
+
+  def vary(ctx: Map[String,Parameter], handles: List[(String,Double)], ast: AST): Seq[AST] = {
+    val t = 0.5 // Tolerance to vary up/down by
+    val variedHandles = handles.map{ case (s,d) => Array((s,Literal(d+t)),(s,Literal(d)),(s,Literal(d-t)))}
+    var choices = new ChooseSeq(2,handles.size)
+    var result = List.empty[AST]
+    while (choices.hasNext) {
+      val currentMapping = choose(variedHandles,choices)
+      val currentContext = ctx.withValues(currentMapping)
+      val concreteAST = Interpreter.evaluate(currentContext, ast)
+      debug(concreteAST.print)
+      result = concreteAST :: result
+      choices.increment()
+    }
+    result
+  }
+}
+
+object PrettyPrinters {
+
+  implicit class printParam(p: Parameter) {
+    def print: String = {
+      p match {
+        case Literal(value) => value.toString()
+        case s => s.toString()
+      }
+    }
+  }
+
+  implicit class printAST(ast: AST) {
+    def print: String = {
+      ast match {
+        case Pt(a,b) => s"Pt(${a.print},${b.print})"
+        case Line(a,b) => s"Line(${a.print},${b.print})"
+        case Union(components) => s"Union(${components.map(_.print).mkString(", ")})"
+      }
+    }
+  }
+}
+
+
+object Main extends App {
+  import PrettyPrinters._
+
+  val cross      = Examples.crossExample
+  val (ast, ctx) = Unifier.unify(cross)
+  ctx.meld()
+  println(ctx.known_variables)
+
+  val inverse = ctx.inverted
+  val handles = ctx.handles(inverse)
+  println(Variations.vary(inverse,handles,ast).map(_.print).mkString("\n\n"))
+}

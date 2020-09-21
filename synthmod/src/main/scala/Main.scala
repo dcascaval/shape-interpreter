@@ -54,6 +54,44 @@ case class ClosestTo(point: Pt)                extends Query
 case class Move(source: AST, vector: Pt)       extends Query // We will use points as vectors
 case class BoundingBox(components: Array[AST]) extends Query
 
+// One-off geometric element
+case class Axis(root: Pt, dir: Pt)
+
+sealed trait Constraint
+/// p1 and p2 are the same point.
+case class Equal(p1: Pt, p2: Pt) extends Constraint
+/// a1 is adjacent to a2 (the point of one is on the boundary of another).
+case class Adjacent(a1: AST, a2: AST) extends Constraint
+/// a1 is a2 but mirrored across axis
+case class Symmetric(a1: AST, a2: AST, axis: Axis) extends Constraint
+// Lines have particular properties we can check and enforce
+case class Parallel(l1: Line, l2: Line)      extends Constraint
+case class Perpendicular(l1: Line, l2: Line) extends Constraint
+
+// a1 and a2 are the same modulo an affine transform of their points
+// in practice we don't want the ENTIRE affine space (all line segments
+// will map to each other!) but we can maybe do translation + rotation.
+case class AffineRepeated() extends Constraint
+
+object Analyzer {
+  // Extract constraints present in the input from a syntax tree.
+  // Some of these will exist by construction, others of these
+  // will be incidental in the current parameterization.
+  def analyze(ast: AST): Set[Constraint] = ???
+
+  // There is also a version of satisfies we can write that returns an optimality,
+  // i.e. "it's okay but not really perfect"
+  def satisfies(ast: AST, constraint: Constraint): Boolean = ???
+}
+
+object Transformer {
+  // Extract the sub-segment of the AST that responds to the query
+  def query(ast: AST, query: Query): AST = ???
+
+  // A transformed version of the AST after query execution
+  def transform(ast: AST, query: Query): AST = ???
+}
+
 // Example programs
 object Examples {
   // Some helper construction functions
@@ -141,8 +179,14 @@ class Context(var known_variables: Map[Parameter, String]) {
     for ((k, v) <- known_variables) yield (v, k)
   }
 
-  def handles(map: Map[String,Parameter]): List[(String,Double)] = {
-    map.filter { case (_,Literal(d)) => true case _ => false } .toList.map { case (k,Literal(d)) => (k,d) }
+  def handles(map: Map[String, Parameter]): List[(String, Double)] = {
+    map
+      .filter {
+        case (_, Literal(d)) => true
+        case _               => false
+      }
+      .toList
+      .map { case (k, Literal(d)) => (k, d) }
   }
 }
 
@@ -191,84 +235,46 @@ object Unifier {
 
 }
 
-// One-off geometric element
-case class Axis(root: Pt, dir: Pt)
-
-sealed trait Constraint
-/// p1 and p2 are the same point.
-case class Equal(p1: Pt, p2: Pt) extends Constraint
-/// a1 is adjacent to a2 (the point of one is on the boundary of another).
-case class Adjacent(a1: AST, a2: AST) extends Constraint
-/// a1 is a2 but mirrored across axis
-case class Symmetric(a1: AST, a2: AST, axis: Axis) extends Constraint
-// Lines have particular properties we can check and enforce
-case class Parallel(l1: Line, l2: Line)      extends Constraint
-case class Perpendicular(l1: Line, l2: Line) extends Constraint
-
-// a1 and a2 are the same modulo an affine transform of their points
-// in practice we don't want the ENTIRE affine space (all line segments
-// will map to each other!) but we can maybe do translation + rotation.
-case class AffineRepeated() extends Constraint
-
-object Analyzer {
-  // Extract constraints present in the input from a syntax tree.
-  // Some of these will exist by construction, others of these
-  // will be incidental in the current parameterization.
-  def analyze(ast: AST): Set[Constraint] = ???
-
-  // There is also a version of satisfies we can write that returns an optimality,
-  // i.e. "it's okay but not really perfect"
-  def satisfies(ast: AST, constraint: Constraint): Boolean = ???
-}
-
-object Transformer {
-  // Extract the sub-segment of the AST that responds to the query
-  def query(ast: AST, query: Query): AST = ???
-
-  // A transformed version of the AST after query execution
-  def transform(ast: AST, query: Query): AST = ???
-}
-
 object Interpreter {
 
-  def evaluate_parameter(ctx: Map[String,Parameter], p : Parameter) : Double = {
+  def evaluate_parameter(ctx: Map[String, Parameter], p: Parameter): Double = {
     p match {
       case Literal(v) => v
-      case Operation(op, args @ _ *) => {
-        val as = args.map(p => evaluate_parameter(ctx,p))
+      case Operation(op, args @ _*) => {
+        val as = args.map(p => evaluate_parameter(ctx, p))
         (op, as) match {
-          case (Neg,Seq(a)) => -a
-          case (Add,Seq(a,b)) => a+b
-          case (Sub,Seq(a,b)) => a-b
-          case (Mul,Seq(a,b)) => a*b
+          case (Neg, Seq(a))    => -a
+          case (Add, Seq(a, b)) => a + b
+          case (Sub, Seq(a, b)) => a - b
+          case (Mul, Seq(a, b)) => a * b
         }
       }
       case Reference(variable) => {
         ctx.get(variable) match {
-          case Some(p) => evaluate_parameter(ctx,p)
+          case Some(p) => evaluate_parameter(ctx, p)
         }
       }
     }
   }
 
   implicit class pointEvaluator(point: Pt) {
-    def evaluate(ctx: Map[String,Parameter]) : Pt = {
-     val x = evaluate_parameter(ctx,point.x)
-        val y = evaluate_parameter(ctx,point.y)
-        Pt(Literal(x),Literal(y))
+    def evaluate(ctx: Map[String, Parameter]): Pt = {
+      val x = evaluate_parameter(ctx, point.x)
+      val y = evaluate_parameter(ctx, point.y)
+      Pt(Literal(x), Literal(y))
     }
   }
 
-  def evaluate(ctx: Map[String,Parameter], ast: AST) : AST = {
+  def evaluate(ctx: Map[String, Parameter], ast: AST): AST = {
     ast match {
-      case p : Pt => p.evaluate(ctx)
-      case Line(a,b) => {
+      case p: Pt => p.evaluate(ctx)
+      case Line(a, b) => {
         val s = a.evaluate(ctx)
         val e = b.evaluate(ctx)
-        Line(s,e)
+        Line(s, e)
       }
       case Union(components) => {
-        Union(components.map(c => evaluate(ctx,c)))
+        Union(components.map(c => evaluate(ctx, c)))
       }
       case _ => ???
     }
@@ -277,53 +283,17 @@ object Interpreter {
 
 object Variations {
   import PrettyPrinters._
+  import VariationUtils._
 
-  class ChooseSeq(bound: Int, arity: Int) {
-    var values : Array[Int] = (0 until arity).toArray
-
-    def hasNext: Boolean = {
-      values.exists(i => i != bound)
-    }
-
-    def apply(i : Int) = values(i)
-
-    def increment() : Unit = {
-      def inc(n : Int): Unit = {
-        if (values(n) != bound) {
-          values(n) += 1
-        } else if (n > 0) {
-          values(n) = 0
-          inc(n-1)
-        }
-      }
-      inc(arity-1)
-    }
-  }
-
-  def choose[T](list : List[Array[T]], choices: ChooseSeq): List[T] = {
-    list.zipWithIndex.map{ case (a,i) => a(choices(i)) }
-  }
-
-  implicit class WithValues(ctx: Map[String,Parameter]) {
-    def withValues(params: List[(String,Parameter)]): Map[String,Parameter] = {
-      var current = ctx
-      for (p <- params) {
-        current += (p)
-      }
-      current
-    }
-  }
-
-
-  def vary(ctx: Map[String,Parameter], handles: List[(String,Double)], ast: AST): Seq[AST] = {
-    val t = 0.5 // Tolerance to vary up/down by
-    val variedHandles = handles.map{ case (s,d) => Array((s,Literal(d+t)),(s,Literal(d)),(s,Literal(d-t)))}
-    var choices = new ChooseSeq(2,handles.size)
-    var result = List.empty[AST]
+  def vary(ctx: Map[String, Parameter], handles: List[(String, Double)], ast: AST): Seq[AST] = {
+    val t             = 0.5 // Tolerance to vary up/down by
+    val variedHandles = handles.map { case (s, d) => Array((s, Literal(d + t)), (s, Literal(d)), (s, Literal(d - t))) }
+    var choices       = new ChooseSeq(2, handles.size)
+    var result        = List.empty[AST]
     while (choices.hasNext) {
-      val currentMapping = choose(variedHandles,choices)
+      val currentMapping = choose(variedHandles, choices)
       val currentContext = ctx.withValues(currentMapping)
-      val concreteAST = Interpreter.evaluate(currentContext, ast)
+      val concreteAST    = Interpreter.evaluate(currentContext, ast)
       debug(concreteAST.print)
       result = concreteAST :: result
       choices.increment()
@@ -331,29 +301,6 @@ object Variations {
     result
   }
 }
-
-object PrettyPrinters {
-
-  implicit class printParam(p: Parameter) {
-    def print: String = {
-      p match {
-        case Literal(value) => value.toString()
-        case s => s.toString()
-      }
-    }
-  }
-
-  implicit class printAST(ast: AST) {
-    def print: String = {
-      ast match {
-        case Pt(a,b) => s"Pt(${a.print},${b.print})"
-        case Line(a,b) => s"Line(${a.print},${b.print})"
-        case Union(components) => s"Union(${components.map(_.print).mkString(", ")})"
-      }
-    }
-  }
-}
-
 
 object Main extends App {
   import PrettyPrinters._
@@ -365,5 +312,5 @@ object Main extends App {
 
   val inverse = ctx.inverted
   val handles = ctx.handles(inverse)
-  println(Variations.vary(inverse,handles,ast).map(_.print).mkString("\n\n"))
+  println(Variations.vary(inverse, handles, ast).map(_.print).mkString("\n\n"))
 }
